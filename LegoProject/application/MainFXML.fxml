@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="spMain" fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainGUI">
+   <content>
+      <VBox alignment="CENTER" fillWidth="false" spacing="5.0">
+         <children>
+            <Label contentDisplay="CENTER" text="Lego Cubes AI Solver" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" spacing="5.0">
+               <children>
+                  <Label text="Population Size (Even Integer):" />
+                  <TextField fx:id="txtPop" alignment="CENTER" prefWidth="125.0" promptText="Population Size" text="4" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" spacing="5.0">
+               <children>
+                  <Label text="Board Size (RxC):" />
+                  <TextField fx:id="txtRows" alignment="CENTER" prefWidth="60.0" promptText="Rows" text="4" />
+                  <Label fx:id="lblX" text="x" />
+                  <TextField fx:id="txtCols" alignment="CENTER" prefWidth="60.0" promptText="Columns" text="4" />
+               </children>
+            </HBox>
+            <GridPane fx:id="gpCubes" alignment="CENTER" />
+            <Button fx:id="btnNext" mnemonicParsing="false" text="Select" />
+            <Label fx:id="lblMsg" textFill="RED" />
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

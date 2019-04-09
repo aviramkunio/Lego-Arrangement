@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fillWidth="false" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LegoGUI">
+   <children>
+      <Label contentDisplay="CENTER" text="Lego Cubes AI Solver" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Pane fx:id="pnBoard" />
+      <HBox alignment="TOP_CENTER" spacing="2.0">
+         <children>
+            <VBox alignment="CENTER_RIGHT" spacing="5.0">
+               <children>
+                  <Label text="Fitness:" textAlignment="CENTER" textFill="#4400ff" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label text="Num of parts:" textAlignment="CENTER" textFill="#4400ff" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" spacing="5.0">
+               <children>
+                  <Label fx:id="lblFit">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="lblParts">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#clickedBack" text="Back" />
+      <Label fx:id="lblMsg" textFill="RED" />
+   </children>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+</VBox>
